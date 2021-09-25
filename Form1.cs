@@ -73,9 +73,16 @@ namespace PushPull
 			{
 				string[] registro = line.Split(',');
 				DataRow fila = dt.NewRow();
-				fila["Matricula"] = registro[0];
-				fila["Nombre"] = registro[1];
-				fila["Carrera"] = registro[2];
+				fila["RNC"] = registro[0];
+				fila["Periodo"] = registro[1];
+				fila["Codigo Nomina"] = registro[2];
+				fila["Tipo Documento"] = registro[3];
+				fila["Documento"] = registro[4];
+				fila["Nombre"] = registro[5];
+				fila["Apellido"] = registro[6];
+				fila["Apellido"] = registro[7];
+				fila["Salario"] = registro[8];
+				fila["Aporte"] = registro[9];
 				dt.Rows.Add(fila);
 			}
 
