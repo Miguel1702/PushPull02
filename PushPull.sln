@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushPull", "PushPull.csproj", "{7DFFDB09-0C3D-4FEA-B4B0-FC9E67E216BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DFFDB09-0C3D-4FEA-B4B0-FC9E67E216BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFFDB09-0C3D-4FEA-B4B0-FC9E67E216BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFFDB09-0C3D-4FEA-B4B0-FC9E67E216BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFFDB09-0C3D-4FEA-B4B0-FC9E67E216BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {791CD996-20A7-40E8-B8FF-3E88BB9924E7}
+	EndGlobalSection
+EndGlobal
