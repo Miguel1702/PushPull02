@@ -13,6 +13,9 @@ namespace PushPull
 {
 	public partial class Form1 : Form
 	{
+		AmericanaEntities am;
+		Prueba p = new Prueba();
+		
 		public Form1()
 		{
 			InitializeComponent();
@@ -31,10 +34,10 @@ namespace PushPull
 			catch (Exception x)
 			{
 
-				MessageBox.Show("Ooops" + x.Message); 
+				MessageBox.Show("Ooops" + x.Message);
 			}
-			
-			
+
+
 		}
 
 		private void loadFile_Click(object sender, EventArgs e)
@@ -85,5 +88,65 @@ namespace PushPull
 		{
 
 		}
+
+		private void crear_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void guardar_Click(object sender, EventArgs e)
+		{
+			
+
+
+			string caja = textBox.Text;
+			guardar_objeto(caja);
+			
+
+		}
+
+
+		public void guardar_objeto(string b){
+
+			am = new AmericanaEntities();
+
+			for (int x = 0 ; textBox.Lines.Length > x; x++) {
+
+				if (b.Contains("EAM"))
+				{
+					break;
+				}
+
+				string[] a = b.Split(',');
+
+				p.RNC = a[0];
+				p.Periodo = a[1];
+				p.Codigo_nomina = a[2];
+				p.Documento_tipo = a[3];
+				p.Documento = a[4];
+				p.Nombre = a[5];
+				p.Apellido = a[6];
+				p.Apellido2 = a[7];
+				//p.Salario = int.Parse(a[8]);
+				//p.Aporte = int.Parse(a[9]);
+
+				am.Pruebas.Add(p);
+
+			}
+
+			try
+			{
+				am.SaveChanges();
+			}
+			catch (Exception x)
+			{
+
+				MessageBox.Show(x.Message);
+			}
+			
+
+		}
+
+
 	}
 }
